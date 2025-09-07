@@ -5,7 +5,7 @@ function encodeBase64() {
         const encoded = btoa(unescape(encodeURIComponent(inputText)));
         outputText.value = encoded;
     } catch (e) {
-        outputText.value = '오류: 유효하지 않은 입력입니다.';
+        outputText.value = 'Error: Invalid input.';
     }
 }
 
@@ -16,6 +16,6 @@ function decodeBase64() {
         const decoded = decodeURIComponent(escape(atob(inputText)));
         outputText.value = decoded;
     } catch (e) {
-        outputText.value = '오류: 유효하지 않은 Base64 문자열입니다.';
+        outputText.value = 'Error: Invalid Base64 string.';
     }
 }
